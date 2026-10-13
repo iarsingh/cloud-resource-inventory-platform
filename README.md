@@ -1,5 +1,12 @@
 # Cloud Resource Inventory Platform
 
+## Overview
+
+A small inventory service that summarizes cloud resources by type. It takes a list of resources and counts them and totals their `monthly` cost grouped by `kind`, giving a quick view of where spend sits. The summary is served through a `POST /analyze` endpoint, and a versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker Compose, GitHub Actions
+- **Scope:** Local laptop lab with tests; it works on posted data and does not connect to a cloud account.
+
 <!-- project-guide:start -->
 ## Project guide
 
